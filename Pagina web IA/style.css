@@ -1,0 +1,212 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2d2d4f; /* Morado oscuro */
+    color: #e0e0f0; /* Morado claro */
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #2d2d4f; /* Morado oscuro */
+    box-shadow: 2px 0px 5px 0px #9a00d8; /* Sombra morada/neón */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav a {
+    color: #9a00d8; /* Morado neón */
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 15px;
+    transition: color 0.5s ease;
+}
+
+nav a:hover {
+    color: #d8a9db; /* Morado claro */
+}
+
+section {
+    padding: 50px;
+    margin-left: 220px; /* Espacio para el menú */
+}
+
+.carrusel {
+    position: relative;
+    width: 80%;
+    max-width: 800px; /* Ajusta según lo necesites */
+    margin: 0 auto; 
+    overflow: hidden;
+    padding: 20px; /* Espacio para que se vea el marco */
+    background-color: transparent; 
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según lo necesites */
+    display: none;
+    cursor: pointer;
+    background-image: url('img/fondoCarrusel.png'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.slide img {
+    width: 70%; 
+    height: 70%; 
+    object-fit: cover; 
+    display: block;
+    margin: 8% auto; /* Esto centra la imagen verticalmente y horizontalmente dentro del slide */
+    border: 3px solid white; 
+}
+.titulo {
+    text-align: center; /* Centra la imagen horizontalmente */
+    margin-bottom: 10px; /* Espacio entre el título y el contenido siguiente, ajusta como prefieras */
+}
+
+.titulo img {
+    width: 40%; /* Ajusta este valor para cambiar el ancho de la imagen */
+    max-width: 300px; /* Asegura que la imagen no se haga demasiado grande */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+.estudiante-content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.estudiante-content img {
+    width: 45%; 
+    max-width: 400px; 
+    height: auto;
+}
+
+.estudiante-descripcion {
+    width: 50%; 
+}
+
+.btn-portafolio {
+    display: inline-block;
+    background-color: #9a00d8; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-portafolio:hover {
+    background-color: #d8a9db; 
+}
+.convocatorias-content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.convocatorias-content img {
+    width: 45%; 
+    max-width: 400px; 
+    height: auto;
+}
+
+.convocatorias-descripcion {
+    width: 50%; 
+}
+
+.btn-convocatoria {
+    display: inline-block;
+    background-color: #9a00d8; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-convocatoria:hover {
+    background-color: #d8a9db; 
+}
+.tabla-portafolios {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fila img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;  /* Esto hará que las imágenes tengan forma de círculo */
+}
+
+.fila a {
+    color: #9a00d8; /* Morado neón */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.5s ease;
+}
+
+.fila a:hover {
+    color: #d8a9db; /* Morado claro */
+}
+
+.convocatoria-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(45, 45, 79, 0.7); /* Fondo morado semi transparente */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #9a00d8; /* Morado neón */
+}
+
+th, td {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+th {
+    background-color: #2d2d4f; /* Morado oscuro */
+    color: #9a00d8; /* Morado neón */
+}
+
+td a {
+    color: #9a00d8; /* Morado neón */
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+td a:hover {
+    color: #d8a9db; /* Morado claro */
+}
